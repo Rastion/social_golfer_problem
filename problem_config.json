@@ -3,11 +3,14 @@
     "default_params": {
       "instance_file": "instances/c_4_3_3.in"
     },
-    "problem_type": "Social Golfer Scheduling",
+    "creator": "Rastion",
+    "type": "problem",
+    "problem_name": "Social golfer scheduling",
     "description": "In the Social Golfer problem, golfers are grouped every week so that they play together in small groups. The goal is to schedule m groups of n golfers over p weeks while minimizing redundant meetings (i.e. ensuring that each pair of golfers meets at most once). The instance file consists of three numbers: the number of groups, the group size, and the number of weeks. The total number of golfers is the product of the first two numbers.",
+    "link_to_dataset": "https://github.com/Rastion/social_golfer_problem/blob/main/instances/c_4_3_3.in",
     "keywords": [
       "social golfer",
-      "scheduling",
+      "production-scheduling",
       "combinatorial",
       "optimization",
       "tournament"
@@ -29,12 +32,8 @@
       "description": "Minimize the sum of redundant meetings. For each pair of golfers, any meeting beyond the first is considered redundant."
     },
     "solution_representation": "A list of weeks, each week a list of groups, each group a list of golfer indices.",
-    "compatible_optimizers": [
-      "genetic_algorithm",
-      "simulated_annealing",
-      "particle_swarm",
-      "tabu_search",
-      "rl_optimizer"
+    "formulations": [
+      ""
     ]
   }
   
